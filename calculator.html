@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="main">
+        <h1>CALCULATOR</h1>
+        <input type="text" id="box">
+
+        <div class="buttons">
+            <button id="btn" onclick="clr()">AC</button>
+            <button onclick="setOp('()')">()</button>
+            <button onclick="setOp('/')">/</button>
+            <button onclick="setOp('%')">÷</button>
+
+            <button onclick="setVal(7)">7</button>
+            <button onclick="setVal(8)">8</button>
+            <button onclick="setVal(9)">9</button>
+            <button onclick="setOp('*')">×</button>
+
+            <button onclick="setVal(4)">4</button>
+            <button onclick="setVal(5)">5</button>
+            <button onclick="setVal(6)">6</button>
+            <button onclick="setOp('-')">−</button>
+
+            <button onclick="setVal(1)">1</button>
+            <button onclick="setVal(2)">2</button>
+            <button onclick="setVal(3)">3</button>
+            <button onclick="setOp('+')">+</button>
+
+            <button id="btn" onclick="del()">&cross;</button>
+            <button onclick="setVal(0)">0</button>
+            <button onclick="setOp('.')">.</button>
+            <button id="btn" onclick="output()">=</button>
+
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
